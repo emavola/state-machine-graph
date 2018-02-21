@@ -1,0 +1,22 @@
+{
+  "name": "state-machine-graph",
+  "version": "1.0.0",
+  "description": "A simple implementation of state machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emavola/state-machine-graph.git"
+  },
+  "author": "Emanuele Volanti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emavola/state-machine-graph/issues"
+  },
+  "homepage": "https://github.com/emavola/state-machine-graph#readme",
+  "devDependencies": {
+    "xo": "^0.20.3"
+  }
+}
