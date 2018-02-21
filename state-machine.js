@@ -47,7 +47,7 @@ function StateMachine(startStateId, states, inputs) {
 		return ret;
 	};
 
-	this.toString = () => {
+	this.toObj = () => {
 		const obj = {};
 		this.states.forEach(st => {
 			const inp = {};
@@ -56,7 +56,11 @@ function StateMachine(startStateId, states, inputs) {
 			});
 			obj[st.id] = inp;
 		});
-		return JSON.stringify(obj, '', 4);
+		return obj;
+	};
+
+	this.toString = () => {
+		return JSON.stringify(this.toObj(), '', 4);
 	};
 }
 
